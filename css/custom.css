@@ -1,0 +1,284 @@
+:root {
+    --purple:  rebeccapurple;
+    --white: floralwhite;
+    --desc: mediumseagreen;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+.col{
+    padding: 1.4rem;
+    border: 1px solid var(--white);
+
+}
+
+.col-splited{
+    display: flex;
+    padding: 1.4rem;
+    border: 1px solid var(--white);
+    gap: 10rem;
+}
+.custom-btn{
+    box-shadow: 3px 3px 0 1px var(--white);
+    border: none;
+    padding: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.git{
+    background: var(--purple);
+}
+.desc{
+    background: var(--desc) ;
+}
+
+.custom-btn:hover {
+    box-shadow: 5px 5px 0 1px var(--white);
+    font-weight: bold;
+    color: black;
+}
+
+.custom-btn-sm{
+    box-shadow: 3px 3px 0 1px var(--white);
+    border: none;
+    padding: 0.2rem;
+    color: black;
+    text-decoration: none;
+}
+
+.general{
+    background: teal;
+}
+
+.custom-btn-sm:hover{
+    padding-left: 0.2rem;
+    padding-right: 0.4rem;
+    font-weight: bold;
+    color: var(--white);
+}
+* {
+    background: black;
+    color: var(--white);
+    font-family: Consolas, serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1{
+    color: var(--white);
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+li{
+    margin: 1rem 0;
+}
+
+
+.tech-stack > a {
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--white);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/*
+.navbar {
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+    margin: 0;
+    padding-bottom: 1rem;
+    position: sticky;
+}
+
+.nav-item > ul > li, .nav-item > ul > a{
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5rem;
+}*/
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: var(--desc);
+    color: var(--white);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: var(--white);
+    min-width: 160px;
+    border: 1px solid var(--white);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--purple);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.vl{
+    border-right: 1px solid var(--white);
+}
+.divider{
+    border-top: 1px solid var(--white) ;
+    background: teal;
+    padding: 0;
+    margin: 0;
+    cursor: help;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 5px solid white;
+}
+
+
+.site-titel{
+    display: inline;
+    background: teal;
+    box-shadow: 3px 3px 0 1px var(--white);
+    border: none;
+    padding: 0.2rem;
+    color: black;
+    text-decoration: none;
+}
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+
+}
+.project-level-col{
+    border: 3px solid var(--white);
+    padding: 2rem;
+    min-width: 25vw;
+}
+.project-level-item{
+    border: 1px solid var(--white);
+}
+.project-level-item-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0;
+
+}
+.project-level-item-content-tech{
+
+}
+.project-level-item-btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+#welcome-text{
+    max-width: 80vw;
+    font-size: 20px;
+}
+.description-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.coming-soon{
+    background: var(--white);
+    color: black;
+    width: 300px;
+    box-shadow: 2px 2px 10px 2px teal;
+}
+
+
+footer{
+    padding-bottom: 1rem;
+}

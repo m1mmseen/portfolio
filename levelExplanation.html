@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Level Explanation</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        fetch("navbar.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("nav").innerHTML = data;
+            });
+        fetch("footer.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+</head>
+<body>
+<nav id="includedContent">here</nav>
+
+<div class="container">
+
+    <div>
+        <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Advanced-blue" width="200" height="25">
+        <p>
+            Relatively long code (depending on the project) with libraries and complex concepts, structures and code patterns.
+        </p>
+    </div>
+
+    <div>
+        <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Intermediate-purple" width="200" height="25">
+        <p>
+            Code lenght up to 500 lines, first complex concepts, less or no libraries
+        </p>
+    </div>
+
+    <div>
+        <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        <p>
+            Short code lenght, basic concepty and less or no libraries
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

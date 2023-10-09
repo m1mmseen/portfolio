@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Descriptions</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      fetch("navbar.html")
+              .then(response => {
+                return response.text()
+              })
+              .then(data => {
+                document.querySelector("nav").innerHTML = data;
+              });
+      fetch("footer.html")
+              .then(response => {
+                return response.text()
+              })
+              .then(data => {
+                document.querySelector("footer").innerHTML = data;
+              });
+    </script>
+
+</head>
+<body>
+<nav id="includedContent">here</nav>
+
+  <div class="container">
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+          <h2 id="incident-tracker">Incident Tracker</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Advanced-blue" width="200" height="25">
+        </div>
+        <p>Using the tracker, incidents can be documented and tracked. The idea is that every user can report an incident, ensuring that as many incidents as possible can be recorded without any obstacles. In this first version, basic features have been implemented. However, the plan is to implement more user stories in the future. The following process is possible in this initial version:
+          A user reports an incident, categorizes it, and assigns a level of severity. They also give it a title and a detailed description. After the incident has been reported, so-called updates can be used to add all related measures, as well as additional notes, etc.
+          There is a login for registered users, but for now, only an admin should be able to add new users, so the respective endpoint can only be accessed by an admin.
+          The dashboard displays all incidents, recent activities, and, in the case of an admin, all active users and failed logins. However, the last two features mentioned do not yet have an API endpoint or JavaScript logic.
+
+          Every user can see their own details, change their password, and log out via a user menu in the bottom left corner. All features have been implemented except for the password change. Currently, only an admin is allowed to delete a user.
+          There is already a basic implementation for notifications. The idea is to make it possible to quickly share an incident with important other users or departments.
+          Also, sending notifications to customers or suppliers as external communication is sensible, but it could also be considered outside the scope of the tracker.
+
+          In the frontend, the option to close or, in this case, solve an incident has already been implemented. What's missing is the corresponding logic in the backend and the database.
+
+          Future Features after finishing the current Definition of Done:
+          Editing an incident afterwards, assigning an incident to another user, create a final report after solving an incident</p>
+        <a href="https://github.com/m1mmseen/incident-tracker" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+    <div class="container">
+    <div class="col">
+      <div class="description-header">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+          <h2 id="calculator">Calculator</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Intermediate-purple" width="200" height="25">
+      </div>
+
+      <p>This application is a simple desktop calculator with basic arithmetic operations as well as square root, squaring, and exponentiation with x. Additionally, parentheses can be used, and a number or an entire expression can be negated. Additionally, calculations can be made with floating-point numbers. Division by zero is caught and highlighted as an error. Both the last numbers individually and the entire calculation can be cleared.</p>
+      <a href="https://github.com/m1mmseen/Desktop-Calculator" class="btn btn-indigo" target="_blank">View on Github</a>
+      <a href="projects.html" class="btn btn-outline-success">All projects</a>
+    </div>
+  </div>
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+            <h2 id="battleship">Battleship Game</h2>
+            <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Intermediate-purple" width="200" height="25">
+        </div>
+        <p>A two-player console game where players take turns firing at ships with the aim of sinking them.</p>
+        <h4>RULES</h4>
+        <p>Each player gets a 10x10 grid. Players have a fleet of ships. The standard set includes: 1 Aircraft Carrier (5 cells) 1 Battleship (4 cells) 1 Submarine (3 cells) 1 Cruiser (3 cells) 1 Destroyer (2 cells)
+          NOTE: Provide coordinates in capital letters e.g. E1 E3.
+          Players place their ships on the grid. Ships can be placed vertically or horizontally, but not diagonally. Ships cannot overlap. Gameplay:
+          Players take turns firing at specific grid coordinates. If a shot hits an opponent's ship, it's marked with "X". If not, it's marked with "M". Once all cells of a ship have been hit, that ship is considered "sunk." The game inform the player when a ship has been sunk, e.g., "You've have sunk a Ship!" Winning: The first player to sink all of their opponent's ships <wins class=""></wins></p>
+        <a href="https://github.com/m1mmseen/battleship" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+            <h2 id="cdma">CDMA</h2>
+            <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <p>Code Division Multiple Access - Signal Spreading</p>
+        <p>CDMA is a digital cellular technology that allows multiple users to share the same frequency spectrum simultaneously. For this purpose, a small Java program was designed that encodes and decodes the messages. Among other things, bit shifting was used for this.</p>
+        <a href="https://github.com/m1mmseen/CDMA" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="60" height="60"/>
+            <h2 id="corner-cutting">Corner Cutting</h2>
+            <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon">Description Coming Soon</h3>        <br>
+        <a href="https://github.com/m1mmseen/Corner-Cutting" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="python" width="30" height="30"/>
+          <h2 id="caesar">Caesar</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/Caesar" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <div>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="25" height="25"/>
+          </div>
+          <h2 id="polynom-plotter">Polynom-Plotter</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/Polynom-Plotter" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <div>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="30" height="30"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/>
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="25" height="25"/>
+          </div>
+            <h2 id="todo">Todo with Ajax</h2>
+            <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/todo_ajax" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="python" width="30" height="30"/>
+            <h2 id="tree">Tree</h2>
+            <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/Tree" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="60" height="60"/>
+          <h2 id="memory">Memory</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/Memory" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col">
+        <div class="description-header">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="python" width="30" height="30"/>
+          <h2 id="shopping-List">Shopping-List</h2>
+          <img alt="Static Badge" src="https://img.shields.io/badge/Project Level-Simple-green" width="200" height="25">
+        </div>
+        <h3 class="coming-soon"> Description Coming Soon</h3>
+        <br>
+        <a href="https://github.com/m1mmseen/Shopping-List" class="btn btn-indigo" target="_blank">View on Github</a>
+        <a href="projects.html" class="btn btn-outline-success">Übersicht</a>
+      </div>
+    </div>
+
+
+</div>
+
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("includedContent");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+</body>
+</html>
